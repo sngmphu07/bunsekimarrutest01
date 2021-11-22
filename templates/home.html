@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>傾向分析丸</title>
+		<link rel="stylesheet" href={{ url_for("static", filename="css/style.css") }}></style>
+		<link rel="stylesheet" href={{ url_for("static", filename="css/popup.css") }}></style>
+		<link rel="stylesheet" href={{ url_for("static", filename="css/styleForMenu.css") }}></style>
+		<script src={{ url_for("static", filename="js/jquery-3.6.0.js") }} type="text/javascript"></script>
+		<script src={{ url_for("static", filename="js/jobkenNameValue.js") }} type="text/javascript"></script>
+	</head>
+	<body>
+		<header>
+			<h1 class="logo"><image src={{ url_for("static", filename="spritesheet/logo.png") }} id="logo"></h1>
+		</header>
+		<div class="searchninput">
+			<p class="search">
+				<select id="todoufuken_list" name="都道府県"></select>
+				<select id="job_list" name="職種"></select><br><br>
+			</p>
+			<p class="input">
+				<input id="shutudai_input" type="submit" value="傾向表示">
+				<input id="mensetsu_houkoku_input" type="submit" value="報告書提出">
+			</p>
+		</div>
+		
+		<div class="pop-up-bg"></div>
+		<image src={{ url_for("static", filename="spritesheet/help.jpg") }} id="help_img">
+		<div class="pop-up-close"><strong><font size="+2">X</font></strong></div>
+		
+		<script src={{ url_for("static", filename="js/javascript.js") }} type="text/javascript"></script><br>
+		<footer>
+			<p>&copy;Copyright keikoubunnsekimaru. All rights reserved.</p>
+			<!-- <p>&copy;Copyright 2022 <b>情シス　ｘ　国際IT　プロジェクト</b>　All rights reserved.</p> -->
+		</footer>
+		<div id="wrapper">
+			<p class="btn-gnavi">
+				<span></span>
+				<span></span>
+				<span></span>
+			</p>
+			<nav id="global-navi">
+				<ul class="menu">
+					<li id="li-help-id">ヘルプ<div class="help-plus"><span></span><span></span></div></li>
+					<div id="li-help-p-id" class="hide"><p>以下のボタンを押して「ヘルプ」画面表します<br><image src={{ url_for("static", filename="spritesheet/help_button.png") }} id="help-submit"></p></div>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>

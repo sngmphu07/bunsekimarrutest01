@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+#logo{
+	display: block;
+	margin : 0 auto;
+}
+#b{
+	background-color:#fff;
+}
+.button{
+	cursor: pointer;
+}
+pre{
+	position: absolute;
+	opacity: 85%;
+	top:30%;
+	left:30%
+}
+footer{
+	position: fixed;
+	font-size: 10px;
+	bottom: 0
+}

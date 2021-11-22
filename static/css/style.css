@@ -1,0 +1,37 @@
+	@charset "utf-8";
+.logo, .searchninput, footer{
+	text-align: center;
+}
+
+#logo{
+	width: 50%;
+	height: auto;
+}
+
+#shutudai_input, #mensetsu_houkoku_input{
+	color: #FFFFFF;
+	font-size: 1.5em;
+	border-width: 5px;
+	background-color: #2CF21B;
+	border-color: #46B038;
+	cursor: pointer;
+}
+
+#shutudai_input:hover, #mensetsu_houkoku_input:hover{
+	background-color: #7BFC6A;
+	border-color: #4CBF3D;
+	cursor: pointer;
+}
+
+#todoufuken_list, #job_list{
+	cursor: pointer;
+	border-width: 3px;
+	border-style: double groove;
+	font-size: 14px;
+}
+
+footer{
+	position: fixed;
+	font-size: 10px;
+	bottom: 0
+}

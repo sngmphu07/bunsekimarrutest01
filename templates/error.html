@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>エラー</title>
+		<link rel="stylesheet" href={{ url_for("static", filename="css/style.css") }}></style>
+		<script src={{ url_for("static", filename="js/jquery-3.6.0.js") }} type="text/javascript"></script>
+	</head>
+	<body>
+		<header>
+			<a href="{{url_for('top_page')}}"><h1 class="logo"><image src={{ url_for("static", filename="spritesheet/logo.png") }} id="logo"></h1></a>
+		</header>
+        <p>
+            エラーが発生しました。<br>
+            タイトルに戻り、再度入力をしてください。
+        </p>
+		<script src={{ url_for("static", filename="js/javascript.js") }} type="text/javascript"></script><br>
+		<footer>
+			<p>&copy;Copyright 2022 <b>情シス　ｘ　国際IT　プロジェクト</b>　All rights reserved.</p>
+		</footer>
+	</body>
+</html>
